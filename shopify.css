@@ -1,0 +1,41 @@
+.btn-app{
+    background-color:blueviolet !important;
+}
+[type="checkbox"]+span {
+    color: black !important;
+    font-weight: bold;
+}
+.price{
+    color: black !important;
+    font-size: larger !important;
+    font-weight: bold;
+    text-align: left !important;
+}
+.card-panel{
+    margin-top: 30px;
+}
+.heading{
+    font-family: 'Lucida Handwriting';
+    font-weight: bolder;
+    padding-right: 3px !important;
+
+}
+i.material-icons{
+    line-height: 2.25 !important;
+}
+.card-title{
+    padding: 5px 0px 5px 0px;
+    margin-top: 0px !important;
+}
+.sponser{
+    font-size: small !important;
+    padding-top: 15px !important;
+}
+.sponsername{
+    color: blueviolet;
+    font-weight: bold;
+    font-family: Lucida Handwriting;
+}
+nav{
+    height: 70px;
+}

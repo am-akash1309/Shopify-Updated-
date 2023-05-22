@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>
+            Shopify
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="shopify.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar-fixed">
+        <nav class="green darken-1">
+            <div class="nav-wrapper">
+              <h5 class="brand-logo right heading">Shopify</h5>
+              <p class="brand-logo right sponser">Powered by <a class="sponsername">TextWish</a></p>
+                <ul>
+                    <li><a class="btn btn-app" href="#mobiles">Mobiles</a></li>
+                    <li><a class="btn btn-app" href="#electronics">Electronics</a></li>
+                    <li><a class="btn btn-app" href="#fashion">Fashion</a></li>
+                    <li><a class="btn btn-app" href="#appliances">Appliances</a></li>
+                    <li><a class="btn btn-app" href="#toysandmore">Toys & More</a></li>
+                    <li>
+                        <a class="pink lighten-2 waves-effect waves-light btn modal-trigger" href="#modal" onclick="viewcart()">View Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+        <!-- <br>
+        <div class="center "><input class="with-gap>" type="radio"/> Select Items to Add them to your <a class="modal-trigger" href="#modal" onclick="viewcart()">Cart</a>.</div>
+        <br> -->
+
+        <div class="row" id="mobiles">
+            <div class="col s6 offset-s3">
+                <div class="card-panel teal light-green accent-1 hoverable">
+                  <h4 class="center card-title blue">Mobiles</h4>
+                <span>
+                    <label><input type="checkbox" onchange="functionname()" value="Samsung M51"/><span>Samsung M51</span></label><br>
+                    <label><input type="checkbox" onchange="functionname()" value="Samsung M30s"/><span>Samsung M30s</span></label><br>
+                    <label><input type="checkbox" onchange="functionname()" value="iPhone 13"/><span>iPhone 13</span></label><br>
+                    <label><input type="checkbox" onchange="functionname()" value="One Plus Nord"/><span>One Plus Nord</span></label><br>
+                </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row" id="electronics">
+            <div class="col s12 s6">
+                <div class="card-panel  light-green accent-1">
+                  <h4 class="center card-title blue">Electronics</h4><br><br>
+                <span class="white-text">
+                    <div class="list-type5">
+                    <ul>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="e1" value="Desktop"/><span>Desktop</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="e2" value="Laptop"/><span>Laptop</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="e3" value="Bluetooth Speakers"/><span>Bluetooth Speakers</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="e4" value="Headphones"/><span>Headphones</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="e5" value="Cameras"/><span>Cameras</span></label></p></li>
+                    </ul>
+                    </div>
+                </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="fashion">
+            <div class="col s12 s6">
+                <div class="card-panel  light-green accent-1">
+                  <h4 class="center card-title blue">Fashion</h4><br><br>
+                <span class="white-text">
+                    <div class="list-type5">
+                    <ul>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="f1" value="Men's T-Shirts"/><span>Men's T-Shirts</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="f2" value="Men's Casual Shirts"/><span>Men's Casual Shirts</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="f3" value="Men's Formal Shirts"/><span>Men's Formal Shirts</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="f4" value="Men's Suits"/><span>Men's Suits</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="f5" value="Men Footwears"/><span>Men Footwears</span></label></p></li>
+                    </ul>
+                    </div>
+                </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="appliances">
+            <div class="col s12 s6">
+                <div class="card-panel  light-green accent-1">
+                  <h4 class="center card-title blue">Appliances</h4><br><br>
+                <span>
+                    <div class="list-type5">
+                    <ul>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="a1" value="Air Conditioners"/><span>Air Conditioners</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="a2" value="Refrigerators"/><span>Refrigerators</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="a3" value="Washing Machines"/><span>Washing Machines</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="a4" value="Televisions"/><span>Televisions</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="a5" value="Kitchen Appliances"/><span>Kitchen Appliances</span></label></p></li>
+                    </ul>
+                    </div>
+                </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="toysandmore">
+            <div class="col s12 s6">
+                <div class="card-panel  light-green accent-1">
+                  <h4 class="center card-title blue">Toys & More</h4><br><br>
+                <span>
+                    <div class="list-type5">
+                    <ul>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="t1" value="Toys"/><span>Toys</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="t2" value="School Supplies"/><span>School Supplies</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="t3" value="Books"/><span>Books</span></label></p></li>
+                        <li><p><label><input class="with-gap selecteditems" type="radio" onchange="functionname()" name="t4" value="Stationery"/><span>Stationery</span></label></p></li>
+                    </ul>
+                    </div>
+                </span>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <h4 class="center green-text">Your Cart</h4>
+              <div  class="list-type5"><div id="write"></div></div>
+              
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close waves-effect waves-green btn">Close</a>
+              <a id="removeitems"></a>
+            </div>
+        </div>
+
+        <script>
+            var selecteditems=[]
+
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="shopify.js"></script>
+    </body>
+    <footer>
+        <p class="center">© Shopify 2022</p>
+    </footer>
+</html>
